@@ -30,9 +30,6 @@
               'estado' => $_POST['estado']
           ];                                             
               $this->model->registrar($datos);                                      
-      }    
-     
-      
-      
+      }     
   }
 ?>
