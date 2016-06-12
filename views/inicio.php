@@ -94,28 +94,29 @@ var cam = Array;
 $.getJSON(uri)
   .done(function( data ) {                 
  $.each(data.Listado, function(i, campo){
-   $("#general").html("<div class='panel panel-info'><div class='panel-heading'><h3 class='panel-title'>Licitación</h3></div><div                    class='panel-body'>Nombre de Licitacion :"
-                    +campo.Nombre+ "<br /> Codigo Externo :"
-                    +campo.CodigoExterno+ "<br /> Fecha Cierre : "
-                    +campo.FechaCierre+ "<br /> Codigo Estado :"
-                    +campo.CodigoEstado+ "<br /> Descripcion :"
-                    +campo.Descripcion+ "<br /> Estado :"
-                    +campo.Estado);  
+   $("#general").html("<div class='panel panel-info'><div class='panel-heading'><h3 class='panel-title'>Licitación</h3></div><div class='panel-body'>\n\
+                    Nombre de Licitación :"+campo.Nombre+ "<br /> \n\
+                    Codigo Externo :"+campo.CodigoExterno+ "<br /> \n\
+                    Fecha Cierre : "+campo.FechaCierre+ "<br /> \n\
+                    Codigo Estado :"+campo.CodigoEstado+ "<br /> \n\
+                    Descripcion :"+campo.Descripcion+ "<br /> \n\
+                    Estado :"+campo.Estado);  
                    /* console.log(campo.Comprador.CodigoOrganismo); */                                                     
-   $("#comprador").html("<div class='panel panel-info'><div class='panel-heading'><h3 class='panel-title'>Datos del Comprador</h3></div><div class='panel-body'>Nombre del Organismo Comprador : "
-      +campo.Comprador.NombreOrganismo+ "<br />Codigo Organismo :"
-      +campo.Comprador.CodigoOrganismo+ "<br /> Rut Unidad : "
-      +campo.Comprador.RutUnidad+ "<br /> Codigo Unidad :"
-      +campo.Comprador.CodigoUnidad+ "<br /> Nombre Unidad :"
-      +campo.Comprador.NombreUnidad+ "<br /> Direccion Unidad :"
-      +campo.Comprador.DireccionUnidad+ "<br />Comuna Unidad : "
-      +campo.Comprador.ComunaUnidad+ "<br /> Region Unidad : "
-      +campo.Comprador.RegionUnidad+ "<br /> Rut Usuario : "
-      +campo.Comprador.RutUsuario+ "<br /> Codigo Usuario : "
-      +campo.Comprador.CodigoUsuario+ "<br /> Nombre Usuario : "
-      +campo.Comprador.NombreUsuario+ "<br /> Cargo Usuario : "
-      +campo.Comprador.CargoUsuario); 
-      $("#general").html("<div class='panel panel-info'><div class='panel-heading'><h3 class='panel-title'>Licitación</h3></div><div                    class='panel-body'>Nombre de Licitacion :"
+   $("#comprador").html("<div class='panel panel-info'><div class='panel-heading'><h3 class='panel-title'>Datos del Comprador</h3></div><div class='panel-body'>\n\
+        Nombre del Organismo Comprador : "+campo.Comprador.NombreOrganismo+ "<br />\n\
+        Codigo Organismo :"+campo.Comprador.CodigoOrganismo+ "<br /> \n\
+        Rut Unidad : "+campo.Comprador.RutUnidad+ "<br /> \n\
+        Codigo Unidad :"+campo.Comprador.CodigoUnidad+ "<br /> \n\
+        Nombre Unidad :"+campo.Comprador.NombreUnidad+ "<br /> \n\
+        Direccion Unidad :"+campo.Comprador.DireccionUnidad+ "<br />\n\
+        Comuna Unidad : "+campo.Comprador.ComunaUnidad+ "<br /> \n\
+        Region Unidad : "+campo.Comprador.RegionUnidad+ "<br /> \n\
+        Rut Usuario : "+campo.Comprador.RutUsuario+ "<br /> \n\
+        Codigo Usuario : "+campo.Comprador.CodigoUsuario+ "<br /> \n\
+        Nombre Usuario : "+campo.Comprador.NombreUsuario+ "<br /> \n\
+        Cargo Usuario : "+campo.Comprador.CargoUsuario); 
+    
+        $("#general").html("<div class='panel panel-info'><div class='panel-heading'><h3 class='panel-title'>Licitación</h3></div><div                    class='panel-body'>Nombre de Licitacion :"
                     +campo.Nombre+ "<br /> Codigo Externo :"
                     +campo.CodigoExterno+ "<br /> Fecha Cierre : "
                     +campo.FechaCierre+ "<br /> Codigo Estado :"
