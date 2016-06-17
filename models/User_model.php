@@ -2,8 +2,7 @@
     # Metodo User_model() que hereda de la clase model
     class User_model extends model
     {
-      private $nombre,$clave,$sw,$idi,$rango = array('jlocal','eemp','emp_pioch');
-      
+      private $nombre,$clave,$sw,$idi,$rango = array('jlocal','eemp','emp_pioch');                   
       # funcion constructora heredada de model
       function __construct()
       {
@@ -57,10 +56,10 @@
         function redir($val){
             switch($this->rango[$val]){
                 case "jlocal":
-                     header("location:".URL."index/encargadolocal");    /// encargado de lokal}         
+                     header("location:".URL."index/encargadolocal");             
                     break;
                 case "eemp":
-                     header("location:".URL."index/encargadoempaque");    /// encargado de empake            
+                     header("location:".URL."index/encargadoempaque");             
                     break;
                 case "emp_pioch":
                     $opc = $this->ep($this->idi);
