@@ -1,27 +1,22 @@
 <?php  
-  class index extends Controller
+  class Index extends Controller
   {
       # la funcion constructora hereda de controller
-      function __construct()
-      {
+      function __construct(){
           parent::__construct();
       }            
 
       # metodo index
-      function index()
-      {
+      function index(){
           # el metodo render admite un parametro que es la pagina de la carpeta views sin el .php
           $this->view->render('index');
       }      
 
-      function inicio()
-      {           
-         
+      function inicio(){                    
           $this->view->render('inicio');
-   
       }
-      public function licitacion()
-      {    
+      
+      public function licitacion(){    
           # Array Asociativo
           $datos = [   
               'nombre' => $_POST['nombre'],
