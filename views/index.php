@@ -1,90 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Inicio</title>    
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/bootstrap.min.css">      
     <link rel="stylesheet" href="<?php echo URL; ?>public/css/style.css">
 </head>
+<header><?php require 'header.php'; ?></header>
 <body>
-<div class="container">
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">ApiMP</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-        <li><a href="<?php echo URL;?>index/otro">Api por php</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-     
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>   
-</div>
  <section>
    <div class="container">
       <div class="jumbotron">
-        <h3>API</h3> 
-          <h4>ELige la lista que quieres ver</h4>    
+          <h3>API - Elige la lista que quieres ver</h3>    
           <div class="row">
-              <div class="col-sm-2"><button class="btn btn-success btn-lg " id="Publicada">Publicada</button></div>
-              <div class="col-sm-2"><button class="btn btn-success btn-lg " id="Cerrada">Cerrada</button></div>
-              <div class="col-sm-2"><button class="btn btn-success btn-lg " id="Desierta">Desierta</button></div>
-              <div class="col-sm-2"><button class="btn btn-success btn-lg " id="Adjudicada">Adjudicada</button></div>
-              <div class="col-sm-2"><button class="btn btn-success btn-lg " id="Revocada">Revocada</button></div>
-              <div class="col-sm-2"><button class="btn btn-success btn-lg " id="Suspendida">Suspendida</button></div>
+              <div class="col-sm-12">
+              <button class="btn btn-success btn-group" id="Publicada">Publicada</button>
+              <button class="btn btn-success btn-group" id="Cerrada">Cerrada</button>
+              <button class="btn btn-success btn-group" id="Desierta">Desierta</button>
+              <button class="btn btn-success btn-group" id="Adjudicada">Adjudicada</button>
+              <button class="btn btn-success btn-group" id="Revocada">Revocada</button>
+              <button class="btn btn-success btn-group" id="Suspendida">Suspendida</button>
+              <button class="btn btn-success btn-group" id="Todos">Todos</button>
+              <button class="btn btn-success btn-group" id="guardar_">Guardar</button>
+              </div>
           </div>
           <br />
-       <div class="row">
-           <div class="col-sm-4">
-               <button class="btn btn-success btn-lg" id="Todos">Todos</button><button class="btn btn-success btn-lg" id="guardar_">Guardar</button>
-           </div>
+       <div class="row"> 
+           
        </div>
        <div class="row">
             <div class="panel panel-default">
                 <div class="panel-body">
-                 <p id="est"></p><br>
-                <p id="cant"></p> 
+                 <p id="est"></p>
+                 <p id="cant"></p> 
                 </div>
             </div>
        </div>
-      </div> 
+      </div>
    </div>
  </section>   
  <section>
@@ -101,7 +53,7 @@
        </form>          
      </div>
    </div>
- </section>        
+</section>        
 <script src="<?php echo URL; ?>public/js/jquery.js"></script>  
 <script src="<?php echo URL; ?>public/js/bootstrap.min.js"></script> 
 <script>
